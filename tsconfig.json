@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ES6",
+            "ES5",
+            "DOM"
+        ],
+        "target": "ES5",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "E"
+    },
+}

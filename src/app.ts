@@ -1,5 +1,6 @@
 import * as express from 'express';
 import * as cors from 'cors';
+import { createConnection } from 'typeorm';
 
 const app = express();
 

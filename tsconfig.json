@@ -8,6 +8,7 @@
         "target": "ES5",
         "module": "CommonJS",
         "moduleResolution": "Node",
-        "E"
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
     },
 }

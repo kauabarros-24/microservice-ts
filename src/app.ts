@@ -2,19 +2,17 @@ import * as express from 'express';
 import * as cors from 'cors';
 import { createConnection } from 'typeorm';
 
-const app = express();
+createConnection().then(db => {
+    const app = express();
+    const port = 8000
 
-// Defina a porta
-const port = 8000;
+    app.use(cors({
+        origin: ['http://localhost:3000', 'http://localhost:8000', 'http://localhost:4200']
+    }))
 
-// Configure o CORS
-app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:8000', 'http://localhost:4200']
-}));
+    app.use(express.json())
 
-app.use(express.json())
-
-// Inicie o servidor
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});
+    app.listen(port, () => {
+        console.log(`${port}`)
+    })
+})

@@ -1,10 +1,10 @@
 {
-    "type": "mysql",
-    "host": "localhost",
-    "port": 3306,
-    "username": "root",
-    "password": "root",
-    "database": "service.js",
+    "type": "postgres",
+    "host": "postgres.railway.internal",
+    "port": 5432,
+    "username": "postgres",
+    "password": "OtMrvbgmUdUkCDXKQiSpRVzptsjrZNbG",
+    "database": "railway",
     "entities": [
         "scr/entity/*.js"
     ],
